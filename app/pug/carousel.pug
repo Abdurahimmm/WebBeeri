@@ -1,32 +1,28 @@
 #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
     .carousel-inner
         .carousel-item.active
-            img.d-block.w-100(src='../img/slider/Dugun.jpg', alt='...')
-            .carousel-caption.d-none.d-md-block
-                h5 First slide label
-                p Nulla vitae elit libero, a pharetra augue mollis interdum.
-        .carousel-item
-            img.d-block.w-100(src='../img/slider/Hali_saha.jpg', alt='...')
-        .carousel-item
-            img.d-block.w-100(src='../img/slider/jenerator-rehberi.jpg', alt='...')
-        .carousel-item
-            img.d-block.w-100(src='../img/slider/Kobi2.jpg', alt='...')
-        .carousel-item
             img.d-block.w-100(src='../img/slider/slide-havaalani.jpg', alt='...')
-            .carousel-caption.d-none.d-md-block.title-block
-                h5.havaalani__title Enerji ihtiyacı AKSA'dan
-                h5.havaalani__title Dünyanın en büyük havalimanının
-                button.btn.btn-primary(type='button button-btn') Detaylı Bilgi
+            .carousel-caption.d-none.d-md-block.title-block.carousel-title
+                h5.havaalani__title Aksa Power Generation
+                h5.havaalani__title Energy Supplier of The World Biggest Airport
+                a.havaalani__link
+                    img.link__img(src="../img/rigth-arrrow.png", alt="arrow")
+                    p.link__btn more information
         .carousel-item
             img.d-block.w-100(src='../img/slider/slide1.jpg', alt='...')
+            .carousel-caption.d-none.d-md-block.title-block.carousel-title1
+                h5.havaalani__title1 Aksa Power Generation
         .carousel-item
             img.d-block.w-100(src='../img/slider/slide2.jpg', alt='...')
+            .carousel-caption.d-none.d-md-block.title-block.carousel-title1
+                h5.havaalani__title1 Aksa Power Generation
         .carousel-item
             img.d-block.w-100(src='../img/slider/slide3.jpg', alt='...')
-        a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+            .carousel-caption.d-none.d-md-block.title-block.carousel-title1
+                h5.havaalani__title1 Aksa Power Generation
+        a.carousel-control-prev.cs-control-next(href='#carouselExampleFade', role='button', data-slide='prev')
             span.carousel-control-prev-icon(aria-hidden='true')
             span.sr-only Previous
-        a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+        a.carousel-control-next.cs-control-prev(href='#carouselExampleFade', role='button', data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next   enerji ihtiyacı AKSA'dan
-                             
+            span.sr-only Next
