@@ -3,14 +3,22 @@
 	background: #333
 .footer
 	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: row wrap
 	padding-bottom: 2%
-	+media(tablet)
+	+media(phone)
+		display: block
+		border-bottom: 1px solid #000
 .footerNav
 	margin-top: .9375rem
-	+media(tablet)
-		width: 50%
+	+media(phone)
+		margin-top: 0
+		margin-left: 5%
 	+media(tablet)
 		margin-top: .9375rem 0 0 0
+		width: 50%
+		margin-left: 5%
 .footerNavList
 	padding: 0
 	list-style: none
@@ -27,7 +35,11 @@
 		text-decoration: none
 .footerContact
 	+media(tablet)
+		margin-left: 4%
 		width: 50%
+	+media(laptop)
+		width: 50%
+		margin-left: 15%
 	margin-top: 3%
 	margin-left: 4%
 .contactTitle
@@ -46,8 +58,16 @@
 	float: right
 	width: 30%
 	margin-top: 3%
+	margin-left: 20%
 	+media(tablet)
 		display: block
+		float: left
+		width: 70%
+		margin-left: auto
+		margin-left: 25%
+	+media(phone)
+		margin-left: 5%
+
 .footerIcon
 	color: #fff
 	font-size: .6rem
@@ -84,6 +104,9 @@
 	border-top: 1px solid black
 	+media(tablet)
 		display: block
+	+media(phone)
+		border: none
+
 .footerLinks
 	width: 50%
 .footerLinksText
@@ -100,3 +123,8 @@
 		text-decoration: none
 .footerImageImg
 	margin-top: 1rem
+	margin-left: 18.75rem
+	+media(laptop)
+		margin-left: 6.25rem
+	+media(tablet)
+		margin-left: 0
