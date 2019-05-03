@@ -16,11 +16,18 @@
 	background: #222
 	position: relative
 .navBarLogo
-	width: 22%
 	text-align: center
+	+media(phone)
+		margin: 0 auto
+	+media(tablet)
+		margin: 0 auto
 .navBarList
 	width: 85%
 	color: #fff
+	+media(phone)
+		display: none
+	+media(tablet)
+		display: none
 .navList
 	display: flex
 	list-style: none
@@ -189,6 +196,10 @@
 	position: absolute
 	top: 0
 	right: 10px
+	+media(phone)
+		display: block
+	+media(tablet)
+		display: block
 .aramaChild
 	color: #9d9d9c
 	font-size: .8rem

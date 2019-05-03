@@ -3,15 +3,36 @@
 	height: 100%
 	background: #ddd
 	display: flex
+	+media(tablet)
+		display: block
+	+media(phone)
+		display: block
+	+media(laptop)
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-flow: row wrap
 .info
 	width: 20%
 	height: 300px
 	position: relative
 	cursor: pointer
+	+media(tablet)
+		width: 100%
+	+media(phone)
+		width: 100%
+	+media(laptop)
+		flex: 1 1 15.625rem
+	
+
 	&:hover
 		.title
 			margin-top: 50%
 			transform: translateY(-50%)
+			+media(tablet)
+				margin-top: 20%
+			+media(phone)
+				margin-top: 35%
 		.infoDiv
 			width: 0px
 			height: 0px
@@ -20,15 +41,22 @@
 			top: 50%
 			& .icon
 				display: none
+			+media(phone)
+				margin-top: 20%
 .i1
 	background: url(../img/info/info1.jpg) no-repeat
 	background-size: cover
 	& .infoDiv
 		& .icon
+			width: 13.625rem
 			background-image: url(../img/info/background1.png)
-			width: 100%
 			margin-left: 58%
 			transform: translateX(-50%)
+			+media(phone)
+				margin-left: 76%
+			+media(tablet)
+				margin-left: 53%
+				margin-top: 13%
 .i2
 	background: url(../img/info/info2.jpg) no-repeat
 	background-size: cover
@@ -36,15 +64,25 @@
 		background: rgba(148,250,65,.7)
 		& .icon
 			background-image: url(../img/info/background2.png)
+			+media(phone)
+				margin-left: 58%
+			+media(tablet)
+				margin-left: 60%
+				margin-top: 13%
 .i3
 	background: url(../img/info/info3.jpg) no-repeat
 	background-size: cover
 	& .infoDiv
 		& .icon
+			width: 15.1875rem
 			background-image: url(../img/info/background3.png)
-			width: 100%
 			margin-left: 55%
 			transform: translateX(-50%)
+			+media(phone)
+				margin-left: 73%
+			+media(tablet)
+				margin-left: 49%
+				margin-top: 13%
 .i4
 	background: url(../img/info/info.jpg) no-repeat
 	background-size: cover
@@ -52,16 +90,32 @@
 		background: rgba(148,250,65,.7)
 	& .infoDiv
 		& .icon
+			width: 14.125rem
 			background-image: url(../img/info/background4.png)
-			width: 100%
 			margin-left: 58%
 			transform: translateX(-50%)
+			+media(phone)
+				margin-left: 50%
+			+media(tablet)
+				margin-left: 50%
+				margin-top: 13%
+			+media(laptop)
+				margin-top: 23%
+				margin-left: 50%
 .i5
 	background: url(../img/info/aydinlatma-bg.jpg) no-repeat
 	background-size: cover
 	& .infoDiv
 		& .icon
 			background-image: url(../img/info/aydinlatma-kuleleri.png)
+			+media(phone)
+				margin-left: 62%
+			+media(tablet)
+				margin-left: 60%
+				margin-top: 13%
+			+media(laptop)
+				margin-top: 23%
+				margin-left: 58%
 
 .infoDiv
 	position: absolute
@@ -75,12 +129,14 @@
 	transition: .5s
 .icon
 	background-repeat: no-repeat
-	width: 50%
 	height: 50%
 	margin-top: 35%
 	transform: translateY(-50%)
 	margin-left: 50%
 	transform: translateX(-50%)
+	+media(phone)
+		margin-left: 80%
+		margin-top: 20%
 .title
 	position: absolute
 	margin-left: 2rem
